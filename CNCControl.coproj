@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Project version="2G - 1.7.6" name="CNCControl">
+  <Target name="DiscoveryTemplate" isCurrent="1">
+    <Device manufacturerId="9" manufacturerName="ST" chipId="344" chipName="STM32F407VG" boardId="" boardName=""/>
+    <BuildOption>
+      <Compile>
+        <Option name="OptimizationLevel" value="0"/>
+        <Option name="UseFPU" value="0"/>
+        <Option name="UserEditCompiler" value="-std=gnu99"/>
+        <Option name="SupportCPlusplus" value="1"/>
+        <Option name="FPU" value="2"/>
+        <Includepaths>
+          <Includepath path="."/>
+        </Includepaths>
+        <DefinedSymbols>
+          <Define name="STM32F407VG"/>
+          <Define name="STM32F4XX"/>
+          <Define name="USE_STDPERIPH_DRIVER"/>
+          <Define name="__ASSEMBLY__"/>
+          <Define name="__FPU_USED"/>
+          <Define name="USE_FULL_ASSERT"/>
+        </DefinedSymbols>
+      </Compile>
+      <Link useDefault="0">
+        <Option name="DiscardUnusedSection" value="0"/>
+        <Option name="UserEditLinkder" value=""/>
+        <Option name="UseMemoryLayout" value="1"/>
+        <Option name="nostartfiles" value="0"/>
+        <Option name="LTO" value="0"/>
+        <Option name="IsNewStartupCode" value="1"/>
+        <Option name="Library" value="Retarget"/>
+        <Option name="UserEditLinker" value="-lstdc++; "/>
+        <LinkedLibraries>
+          <Libset dir="" libs="m"/>
+        </LinkedLibraries>
+        <MemoryAreas debugInFlashNotRAM="1">
+          <Memory name="IROM1" type="ReadOnly" size="0x00100000" startValue="0x08000000"/>
+          <Memory name="IRAM1" type="ReadWrite" size="0x00020000" startValue="0x20000000"/>
+          <Memory name="IROM2" type="ReadOnly" size="" startValue=""/>
+          <Memory name="IRAM2" type="ReadWrite" size="0x00010000" startValue="0x10000000"/>
+        </MemoryAreas>
+        <LocateLinkFile path="c:/coocox/coide/configuration/programdata/cnccontrol/arm-gcc-link.ld" type="0"/>
+      </Link>
+      <Output>
+        <Option name="OutputFileType" value="0"/>
+        <Option name="Path" value="./"/>
+        <Option name="Name" value="DiscoveryTemplate"/>
+        <Option name="HEX" value="1"/>
+        <Option name="BIN" value="1"/>
+      </Output>
+      <User>
+        <UserRun name="Run#1" type="Before" checked="0" value=""/>
+        <UserRun name="Run#1" type="After" checked="0" value=""/>
+      </User>
+    </BuildOption>
+    <DebugOption>
+      <Option name="org.coocox.codebugger.gdbjtag.core.adapter" value="ST-Link"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.debugMode" value="SWD"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.clockDiv" value="1M"/>
+      <Option name="org.coocox.codebugger.gdbjtag.corerunToMain" value="1"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.jlinkgdbserver" value=""/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.userDefineGDBScript" value=""/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.targetEndianess" value="0"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.jlinkResetMode" value="Type 0: Normal"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.resetMode" value="SYSRESETREQ"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.ifSemihost" value="0"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.ifCacheRom" value="1"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.ipAddress" value="127.0.0.1"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.portNumber" value="2009"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.autoDownload" value="1"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.verify" value="1"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.downloadFuction" value="Erase Effected"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.defaultAlgorithm" value="STM32F4xx_1024.elf"/>
+    </DebugOption>
+    <ExcludeFile/>
+  </Target>
+  <Components path="./">
+    <Component id="54" name="M4 CMSIS Core" path="" type="2"/>
+    <Component id="500" name="CMSIS BOOT" path="" type="2"/>
+    <Component id="501" name="RCC" path="" type="2"/>
+    <Component id="502" name="PWR" path="" type="2"/>
+    <Component id="504" name="GPIO" path="" type="2"/>
+    <Component id="505" name="EXTI" path="" type="2"/>
+    <Component id="507" name="IWDG" path="" type="2"/>
+    <Component id="509" name="SPI" path="" type="2"/>
+    <Component id="511" name="DMA" path="" type="2"/>
+    <Component id="512" name="FLASH" path="" type="2"/>
+    <Component id="513" name="TIM" path="" type="2"/>
+    <Component id="514" name="ADC" path="" type="2"/>
+    <Component id="516" name="FSMC" path="" type="2"/>
+    <Component id="517" name="USART" path="" type="2"/>
+    <Component id="518" name="RNG" path="" type="2"/>
+    <Component id="520" name="SDIO" path="" type="2"/>
+    <Component id="524" name="MISC" path="" type="2"/>
+    <Component id="526" name="SYSCFG" path="" type="2"/>
+  </Components>
+  <Files>
+    <File name="movement.c" path="movement.c" type="1"/>
+    <File name="cmsis_lib/include/stm32f4xx_flash.h" path="cmsis_lib/include/stm32f4xx_flash.h" type="1"/>
+    <File name="cmsis_lib/source/stm32f4xx_gpio.c" path="cmsis_lib/source/stm32f4xx_gpio.c" type="1"/>
+    <File name="controller.h" path="controller.h" type="1"/>
+    <File name="cmsis_lib/source/stm32f4xx_dma.c" path="cmsis_lib/source/stm32f4xx_dma.c" type="1"/>
+    <File name="cmsis_lib/source/stm32f4xx_usart.c" path="cmsis_lib/source/stm32f4xx_usart.c" type="1"/>
+    <File name="FreeRTOS/Source/queue.c" path="FreeRTOS/Source/queue.c" type="1"/>
+    <File name="FreeRTOS/Source/tasks.c" path="FreeRTOS/Source/tasks.c" type="1"/>
+    <File name="FreeRTOS/Source/include/croutine.h" path="FreeRTOS/Source/include/croutine.h" type="1"/>
+    <File name="src/PCD8544/font6x8.h" path="src/PCD8544/font6x8.h" type="1"/>
+    <File name="cmsis_boot" path="" type="2"/>
+    <File name="FreeRTOS/Source/include/mpu_wrappers.h" path="FreeRTOS/Source/include/mpu_wrappers.h" type="1"/>
+    <File name="src/XPT2046/touch.h" path="src/XPT2046/touch.h" type="1"/>
+    <File name="cmsis_lib/include/stm32f4xx_syscfg.h" path="cmsis_lib/include/stm32f4xx_syscfg.h" type="1"/>
+    <File name="cmsis_lib/source/stm32f4xx_fsmc.c" path="cmsis_lib/source/stm32f4xx_fsmc.c" type="1"/>
+    <File name="plasma.c" path="plasma.c" type="1"/>
+    <File name="src/FAST_ILI9328" path="" type="2"/>
+    <File name="src" path="" type="2"/>
+    <File name="cmsis_lib/include/stm32f4xx_usart.h" path="cmsis_lib/include/stm32f4xx_usart.h" type="1"/>
+    <File name="FreeRTOS/Source/include/timers.h" path="FreeRTOS/Source/include/timers.h" type="1"/>
+    <File name="debug.c" path="debug.c" type="1"/>
+    <File name="cmsis_boot/stm32f4xx.h" path="cmsis_boot/stm32f4xx.h" type="1"/>
+    <File name="cmsis/core_cm4_simd.h" path="cmsis/core_cm4_simd.h" type="1"/>
+    <File name="cmsis_lib/source/stm32f4xx_flash.c" path="cmsis_lib/source/stm32f4xx_flash.c" type="1"/>
+    <File name="cmsis_boot/startup" path="" type="2"/>
+    <File name="cmsis_lib/source/stm32f4xx_spi.c" path="cmsis_lib/source/stm32f4xx_spi.c" type="1"/>
+    <File name="cmsis/core_cmFunc.h" path="cmsis/core_cmFunc.h" type="1"/>
+    <File name="cmsis/core_cm4.h" path="cmsis/core_cm4.h" type="1"/>
+    <File name="src/FAST_ILI9328/ILI9327.h" path="src/FAST_ILI9328/ILI9327.h" type="1"/>
+    <File name="FreeRTOS/Source/portmacro.h" path="FreeRTOS/Source/portmacro.h" type="1"/>
+    <File name="string.c" path="string.c" type="1"/>
+    <File name="cmsis_lib/source/misc.c" path="cmsis_lib/source/misc.c" type="1"/>
+    <File name="cmsis_lib/include/stm32f4xx_tim.h" path="cmsis_lib/include/stm32f4xx_tim.h" type="1"/>
+    <File name="cmsis_lib/source/stm32f4xx_adc.c" path="cmsis_lib/source/stm32f4xx_adc.c" type="1"/>
+    <File name="FreeRTOS/Source/port.c" path="FreeRTOS/Source/port.c" type="1"/>
+    <File name="cmsis_lib/source/stm32f4xx_iwdg.c" path="cmsis_lib/source/stm32f4xx_iwdg.c" type="1"/>
+    <File name="src/FAST_ILI9328/DefaultFonts.c" path="src/FAST_ILI9328/DefaultFonts.c" type="1"/>
+    <File name="FreeRTOS/Source/include/portable.h" path="FreeRTOS/Source/include/portable.h" type="1"/>
+    <File name="cmsis_lib/source" path="" type="2"/>
+    <File name="FreeRTOS/Source/croutine.c" path="FreeRTOS/Source/croutine.c" type="1"/>
+    <File name="debug.h" path="debug.h" type="1"/>
+    <File name="src/PCD8544" path="" type="2"/>
+    <File name="cmsis_boot/stm32f4xx_conf.h" path="cmsis_boot/stm32f4xx_conf.h" type="1"/>
+    <File name="cmsis_boot/system_stm32f4xx.h" path="cmsis_boot/system_stm32f4xx.h" type="1"/>
+    <File name="src/FAST_ILI9328/ILI9327.c" path="src/FAST_ILI9328/ILI9327.c" type="1"/>
+    <File name="bitmap.c" path="bitmap.c" type="1"/>
+    <File name="FreeRTOS/Source/list.c" path="FreeRTOS/Source/list.c" type="1"/>
+    <File name="FreeRTOS/Source/timers.c" path="FreeRTOS/Source/timers.c" type="1"/>
+    <File name="src/XPT2046/touch.c" path="src/XPT2046/touch.c" type="1"/>
+    <File name="cmsis_lib/include/stm32f4xx_rcc.h" path="cmsis_lib/include/stm32f4xx_rcc.h" type="1"/>
+    <File name="FreeRTOS/Source" path="" type="2"/>
+    <File name="FreeRTOS/Source/include" path="" type="2"/>
+    <File name="movement.h" path="movement.h" type="1"/>
+    <File name="cmsis_lib/source/stm32f4xx_syscfg.c" path="cmsis_lib/source/stm32f4xx_syscfg.c" type="1"/>
+    <File name="cmsis_lib/include/stm32f4xx_pwr.h" path="cmsis_lib/include/stm32f4xx_pwr.h" type="1"/>
+    <File name="FreeRTOS/Source/include/task.h" path="FreeRTOS/Source/include/task.h" type="1"/>
+    <File name="string.h" path="string.h" type="1"/>
+    <File name="cmsis_boot/startup/startup_stm32f4xx.c" path="cmsis_boot/startup/startup_stm32f4xx.c" type="1"/>
+    <File name="cmsis_lib/source/stm32f4xx_rcc.c" path="cmsis_lib/source/stm32f4xx_rcc.c" type="1"/>
+    <File name="cmsis/core_cmInstr.h" path="cmsis/core_cmInstr.h" type="1"/>
+    <File name="cmsis_lib/include/stm32f4xx_iwdg.h" path="cmsis_lib/include/stm32f4xx_iwdg.h" type="1"/>
+    <File name="cmsis_lib/source/stm32f4xx_pwr.c" path="cmsis_lib/source/stm32f4xx_pwr.c" type="1"/>
+    <File name="src/PCD8544/pcd8544.c" path="src/PCD8544/pcd8544.c" type="1"/>
+    <File name="FreeRTOS/Source/include/queue.h" path="FreeRTOS/Source/include/queue.h" type="1"/>
+    <File name="cmsis_lib/include/stm32f4xx_sdio.h" path="cmsis_lib/include/stm32f4xx_sdio.h" type="1"/>
+    <File name="cmsis_lib/source/stm32f4xx_sdio.c" path="cmsis_lib/source/stm32f4xx_sdio.c" type="1"/>
+    <File name="FreeRTOS/Source/include/semphr.h" path="FreeRTOS/Source/include/semphr.h" type="1"/>
+    <File name="cmsis_lib/include/stm32f4xx_adc.h" path="cmsis_lib/include/stm32f4xx_adc.h" type="1"/>
+    <File name="cmsis_lib/include/stm32f4xx_exti.h" path="cmsis_lib/include/stm32f4xx_exti.h" type="1"/>
+    <File name="cmsis_lib/source/stm32f4xx_exti.c" path="cmsis_lib/source/stm32f4xx_exti.c" type="1"/>
+    <File name="FreeRTOS/Source/include/list.h" path="FreeRTOS/Source/include/list.h" type="1"/>
+    <File name="cmsis_boot/system_stm32f4xx.c" path="cmsis_boot/system_stm32f4xx.c" type="1"/>
+    <File name="cmsis_lib/source/stm32f4xx_rng.c" path="cmsis_lib/source/stm32f4xx_rng.c" type="1"/>
+    <File name="cmsis_lib/include/stm32f4xx_spi.h" path="cmsis_lib/include/stm32f4xx_spi.h" type="1"/>
+    <File name="src/PCD8544/pcd8544.h" path="src/PCD8544/pcd8544.h" type="1"/>
+    <File name="cmsis" path="" type="2"/>
+    <File name="cmsis_lib" path="" type="2"/>
+    <File name="cmsis_lib/include/stm32f4xx_dma.h" path="cmsis_lib/include/stm32f4xx_dma.h" type="1"/>
+    <File name="cmsis_lib/source/stm32f4xx_tim.c" path="cmsis_lib/source/stm32f4xx_tim.c" type="1"/>
+    <File name="cmsis_lib/include/stm32f4xx_gpio.h" path="cmsis_lib/include/stm32f4xx_gpio.h" type="1"/>
+    <File name="plasma.h" path="plasma.h" type="1"/>
+    <File name="FreeRTOS/Source/include/FreeRTOS.h" path="FreeRTOS/Source/include/FreeRTOS.h" type="1"/>
+    <File name="FreeRTOS/Source/include/event_groups.h" path="FreeRTOS/Source/include/event_groups.h" type="1"/>
+    <File name="controller.c" path="controller.c" type="1"/>
+    <File name="FreeRTOS/Source/include/StackMacros.h" path="FreeRTOS/Source/include/StackMacros.h" type="1"/>
+    <File name="cmsis_lib/include/misc.h" path="cmsis_lib/include/misc.h" type="1"/>
+    <File name="cmsis_lib/include/stm32f4xx_fsmc.h" path="cmsis_lib/include/stm32f4xx_fsmc.h" type="1"/>
+    <File name="cmsis_lib/include/stm32f4xx_rng.h" path="cmsis_lib/include/stm32f4xx_rng.h" type="1"/>
+    <File name="FreeRTOS/Source/event_groups.c" path="FreeRTOS/Source/event_groups.c" type="1"/>
+    <File name="cmsis_lib/include" path="" type="2"/>
+    <File name="FreeRTOS/Source/heap_2.c" path="FreeRTOS/Source/heap_2.c" type="1"/>
+    <File name="FreeRTOS" path="" type="2"/>
+    <File name="FreeRTOSConfig.h" path="FreeRTOSConfig.h" type="1"/>
+    <File name="FreeRTOS/Source/include/projdefs.h" path="FreeRTOS/Source/include/projdefs.h" type="1"/>
+    <File name="main.c" path="main.c" type="1"/>
+    <File name="src/XPT2046" path="" type="2"/>
+  </Files>
+</Project>
