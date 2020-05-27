@@ -1,115 +1,112 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <history>
-   <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wall -ffunction-sections -g -O0 -std=gnu99 -c -DSTM32F407VG -DSTM32F4XX -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -D__FPU_USED -DUSE_FULL_ASSERT -I..\..\..\..\..\_Документы\cnc\CNCControl\src\PCD8544 -I..\..\..\..\..\_Документы\cnc\CNCControl\src\FAST_ILI9328 -I..\..\..\..\..\_Документы\cnc\CNCControl\cmsis_lib -I..\..\..\..\..\_Документы\cnc\CNCControl\FreeRTOS -I..\..\..\..\..\_Документы\cnc\CNCControl\src\XPT2046 -I..\..\..\..\..\_Документы\cnc\CNCControl -I..\..\..\..\..\_Документы\cnc\CNCControl\FreeRTOS\Source -I..\..\..\..\..\_Документы\cnc\CNCControl\cmsis_boot -I..\..\..\..\..\_Документы\cnc\CNCControl\cmsis_lib\include -I..\..\..\..\..\_Документы\cnc -I..\..\..\..\..\_Документы\cnc\CNCControl\cmsis -I..\..\..\..\..\_Документы\cnc\CNCControl\src -I..\..\..\..\..\_Документы -I..\..\..\..\..\_Документы\cnc\CNCControl\FreeRTOS\Source\include">
-      <target file="stm32f4xx_fsmc.o" lastModified="159dbea5e4a">
+   <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wall -ffunction-sections -g -O0 -std=gnu99 -c -DSTM32F407VG -DSTM32F4XX -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -D__FPU_USED -DUSE_FULL_ASSERT -IH:\#WORK\_STM32\CNCMotion\FreeRTOS\Source -IH:\#WORK\_STM32\CNCMotion\src\XPT2046 -IH:\#WORK\_STM32\CNCMotion\src\PCD8544 -IH:\#WORK\_STM32\CNCMotion\src -IH:\#WORK\_STM32\CNCMotion\cmsis -IH:\#WORK\_STM32\CNCMotion\cmsis_lib\include -IH:\#WORK\_STM32\CNCMotion\FreeRTOS\Source\include -IH:\#WORK\_STM32 -IH:\#WORK -IH:\#WORK\_STM32\CNCMotion\cmsis_lib -IH:\#WORK\_STM32\CNCMotion\cmsis_boot -IH:\#WORK\_STM32\CNCMotion\FreeRTOS -IH:\#WORK\_STM32\CNCMotion\src\FAST_ILI9328 -IH:\#WORK\_STM32\CNCMotion">
+      <target file="stm32f4xx_fsmc.o" lastModified="15f63a8ecc6">
          <source file="..\..\..\cmsis_lib\source\stm32f4xx_fsmc.c" lastModified="14b7485c6bb"/>
       </target>
-      <target file="misc.o" lastModified="159dbea7ca4">
+      <target file="misc.o" lastModified="15f63a8f928">
          <source file="..\..\..\cmsis_lib\source\misc.c" lastModified="14ae4559873"/>
       </target>
-      <target file="queue.o" lastModified="159dbea6e53">
+      <target file="queue.o" lastModified="15f63a8f336">
          <source file="..\..\..\FreeRTOS\Source\queue.c" lastModified="1483835e35f"/>
       </target>
-      <target file="pcd8544.o" lastModified="159dbea45fc">
-         <source file="..\..\..\src\PCD8544\pcd8544.c" lastModified="14b7ed5ee66"/>
-      </target>
-      <target file="stm32f4xx_tim.o" lastModified="159dbea8416">
+      <target file="stm32f4xx_tim.o" lastModified="15f63a8fbb6">
          <source file="..\..\..\cmsis_lib\source\stm32f4xx_tim.c" lastModified="14ae4537620"/>
       </target>
-      <target file="timers.o" lastModified="159dbea5754">
+      <target file="pcd8544.o" lastModified="15f63a8e126">
+         <source file="..\..\..\src\PCD8544\pcd8544.c" lastModified="14b7ed5ee66"/>
+      </target>
+      <target file="timers.o" lastModified="15f63a8e9a3">
          <source file="..\..\..\FreeRTOS\Source\timers.c" lastModified="1483835e373"/>
       </target>
-      <target file="stm32f4xx_iwdg.o" lastModified="159dbea50f8">
+      <target file="stm32f4xx_iwdg.o" lastModified="15f63a8e628">
          <source file="..\..\..\cmsis_lib\source\stm32f4xx_iwdg.c" lastModified="14ae4561535"/>
       </target>
-      <target file="tasks.o" lastModified="159dbea5bc9">
+      <target file="tasks.o" lastModified="15f63a8eba2">
          <source file="..\..\..\FreeRTOS\Source\tasks.c" lastModified="1544e73cfd2"/>
       </target>
-      <target file="stm32f4xx_exti.o" lastModified="159dbea7b7b">
+      <target file="stm32f4xx_exti.o" lastModified="15f63a8f8c4">
          <source file="..\..\..\cmsis_lib\source\stm32f4xx_exti.c" lastModified="14b8c77ebc8"/>
       </target>
-      <target file="stm32f4xx_gpio.o" lastModified="159dbea6232">
+      <target file="stm32f4xx_gpio.o" lastModified="15f63a8ee36">
          <source file="..\..\..\cmsis_lib\source\stm32f4xx_gpio.c" lastModified="14ae4526cbe"/>
       </target>
-      <target file="string.o" lastModified="159dbea485d">
+      <target file="string.o" lastModified="15f63a8e25e">
          <source file="..\..\..\string.c" lastModified="1547c80d628"/>
       </target>
-      <target file="stm32f4xx_usart.o" lastModified="159dbea4b8a">
+      <target file="stm32f4xx_usart.o" lastModified="15f63a8e404">
          <source file="..\..\..\cmsis_lib\source\stm32f4xx_usart.c" lastModified="14ae4550aca"/>
       </target>
-      <target file="debug.o" lastModified="159dbea6f74">
+      <target file="debug.o" lastModified="15f63a8f3d3">
          <source file="..\..\..\debug.c" lastModified="1547c80d60d"/>
       </target>
-      <target file="event_groups.o" lastModified="159dbea732e">
+      <target file="event_groups.o" lastModified="15f63a8f58f">
          <source file="..\..\..\FreeRTOS\Source\event_groups.c" lastModified="1483835dfd1"/>
       </target>
-      <target file="stm32f4xx_rcc.o" lastModified="159dbea560c">
+      <target file="stm32f4xx_rcc.o" lastModified="15f63a8e92a">
          <source file="..\..\..\cmsis_lib\source\stm32f4xx_rcc.c" lastModified="14ae451b594"/>
       </target>
-      <target file="stm32f4xx_pwr.o" lastModified="159dbea4cb2">
+      <target file="stm32f4xx_pwr.o" lastModified="15f63a8e469">
          <source file="..\..\..\cmsis_lib\source\stm32f4xx_pwr.c" lastModified="14ae4564aeb"/>
       </target>
-      <target file="croutine.o" lastModified="159dbea706f">
+      <target file="croutine.o" lastModified="15f63a8f438">
          <source file="..\..\..\FreeRTOS\Source\croutine.c" lastModified="1483835dfc7"/>
       </target>
-      <target file="controller.o" lastModified="159dbea7fe0">
+      <target file="controller.o" lastModified="15f63a8fa2d">
          <source file="..\..\..\controller.c" lastModified="1554e90c664"/>
       </target>
-      <target file="stm32f4xx_rng.o" lastModified="159dbea7a33">
+      <target file="stm32f4xx_rng.o" lastModified="15f63a8f863">
          <source file="..\..\..\cmsis_lib\source\stm32f4xx_rng.c" lastModified="14ae452f538"/>
       </target>
-      <target file="movement.o" lastModified="159dc69036c">
-         <source file="..\..\..\movement.c" lastModified="159dc68f4fb"/>
-      </target>
-      <target file="stm32f4xx_adc.o" lastModified="159dbea5948">
+      <target file="stm32f4xx_adc.o" lastModified="15f63a8ea5e">
          <source file="..\..\..\cmsis_lib\source\stm32f4xx_adc.c" lastModified="14b7c5450f6"/>
       </target>
-      <target file="DefaultFonts.o" lastModified="159dbea4dcc">
+      <target file="DefaultFonts.o" lastModified="15f63a8e4df">
          <source file="..\..\..\src\FAST_ILI9328\DefaultFonts.c" lastModified="14b7a6c1ec2"/>
       </target>
-      <target file="list.o" lastModified="159dbea64a3">
+      <target file="list.o" lastModified="15f63a8ef0e">
          <source file="..\..\..\FreeRTOS\Source\list.c" lastModified="1483835e00d"/>
       </target>
-      <target file="stm32f4xx_flash.o" lastModified="159dbea6399">
+      <target file="stm32f4xx_flash.o" lastModified="15f63a8eec1">
          <source file="..\..\..\cmsis_lib\source\stm32f4xx_flash.c" lastModified="14ae453f7a4"/>
       </target>
-      <target file="port.o" lastModified="159dbea6aa8">
+      <target file="port.o" lastModified="15f63a8f1c0">
          <source file="..\..\..\FreeRTOS\Source\port.c" lastModified="1483835e0a3"/>
       </target>
-      <target file="startup_stm32f4xx.o" lastModified="159dbea4fdf">
+      <target file="startup_stm32f4xx.o" lastModified="15f63a8e5ae">
          <source file="..\..\..\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="1554b978779"/>
       </target>
-      <target file="bitmap.o" lastModified="159dbea78fa">
+      <target file="bitmap.o" lastModified="15f63a8f810">
          <source file="..\..\..\bitmap.c" lastModified="14b063ae270"/>
       </target>
-      <target file="stm32f4xx_dma.o" lastModified="159dbea6762">
+      <target file="stm32f4xx_dma.o" lastModified="15f63a8f015">
          <source file="..\..\..\cmsis_lib\source\stm32f4xx_dma.c" lastModified="14aef12201b"/>
       </target>
-      <target file="ILI9327.o" lastModified="159dbea60bb">
+      <target file="ILI9327.o" lastModified="15f63a8edb2">
          <source file="..\..\..\src\FAST_ILI9328\ILI9327.c" lastModified="1554a98aa2b"/>
       </target>
-      <target file="stm32f4xx_sdio.o" lastModified="159dbea49c4">
+      <target file="stm32f4xx_sdio.o" lastModified="15f63a8e317">
          <source file="..\..\..\cmsis_lib\source\stm32f4xx_sdio.c" lastModified="14ae45685f0"/>
       </target>
-      <target file="heap_2.o" lastModified="159dbea7dcd">
+      <target file="heap_2.o" lastModified="15f63a8f983">
          <source file="..\..\..\FreeRTOS\Source\heap_2.c" lastModified="1483835e247"/>
       </target>
-      <target file="stm32f4xx_syscfg.o" lastModified="159dbea4724">
+      <target file="stm32f4xx_syscfg.o" lastModified="15f63a8e1d7">
          <source file="..\..\..\cmsis_lib\source\stm32f4xx_syscfg.c" lastModified="1554a5e0072"/>
       </target>
-      <target file="stm32f4xx_spi.o" lastModified="159dbea7205">
+      <target file="stm32f4xx_spi.o" lastModified="15f63a8f509">
          <source file="..\..\..\cmsis_lib\source\stm32f4xx_spi.c" lastModified="14aef124259"/>
       </target>
-      <target file="main.o" lastModified="159dbea5416">
+      <target file="main.o" lastModified="15f63a8e813">
          <source file="..\..\..\main.c" lastModified="1554e828520"/>
       </target>
-      <target file="system_stm32f4xx.o" lastModified="159dbea659d">
+      <target file="system_stm32f4xx.o" lastModified="15f63a8ef69">
          <source file="..\..\..\cmsis_boot\system_stm32f4xx.c" lastModified="153fa698563"/>
       </target>
-      <target file="plasma.o" lastModified="159dbea5cb3">
-         <source file="..\..\..\plasma.c" lastModified="153e8418f97"/>
+      <target file="plasma.o" lastModified="15f63a8ec20">
+         <source file="..\..\..\plasma.c" lastModified="159eaac8370"/>
       </target>
-      <target file="touch.o" lastModified="159dbea4f24">
+      <target file="touch.o" lastModified="15f63a8e569">
          <source file="..\..\..\src\XPT2046\touch.c" lastModified="1554aabc40a"/>
       </target>
    </processor>

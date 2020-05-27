@@ -33,9 +33,9 @@
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CNCControl/movement.h"/>
 <editorState selectionHorizontalPixel="0" selectionLength="16" selectionOffset="2194" selectionTopPixel="1241"/>
 </editor>
-<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="movement.c" partName="movement.c" path="C:/_Документы/cnc/CNCControl/movement.c" title="movement.c" tooltip="C:/_Документы/cnc/CNCControl/movement.c" workbook="DefaultEditorWorkbook">
+<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="movement.c" partName="movement.c" path="H:/#WORK/_STM32/CNCMotion/movement.c" title="movement.c" tooltip="H:/#WORK/_STM32/CNCMotion/movement.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CNCControl/movement.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="11883" selectionTopPixel="5827"/>
+<editorState selectionHorizontalPixel="0" selectionLength="115" selectionOffset="10579" selectionTopPixel="4575"/>
 </editor>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="startup_stm32f4xx.c" partName="startup_stm32f4xx.c" path="H:/WORKSPACE/_STM32/CNCControl/cmsis_boot/startup/startup_stm32f4xx.c" title="startup_stm32f4xx.c" tooltip="H:/WORKSPACE/_STM32/CNCControl/cmsis_boot/startup/startup_stm32f4xx.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CNCControl/cmsis_boot/startup/startup_stm32f4xx.c"/>
@@ -141,7 +141,7 @@
 <page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 </folder>
 </info>
-<info part="org.coocox.builder.ui.exampleView" ratio="0.26568267" ratioLeft="360" ratioRight="995" relationship="2" relative="org.eclipse.ui.internal.ViewStack@14a7381"/>
+<info part="org.coocox.builder.ui.exampleView" ratio="0.31365314" ratioLeft="425" ratioRight="930" relationship="2" relative="org.eclipse.ui.internal.ViewStack@14a7381"/>
 <info folder="true" part="org.eclipse.ui.internal.ViewStack@1fee185" ratio="0.71971494" ratioLeft="909" ratioRight="354" relationship="2" relative="org.coocox.builder.ui.exampleView">
 <folder appearance="2" expanded="2">
 <page content="org.coocox.component.ui.Help" label="LabelNotFound"/>
@@ -274,9 +274,6 @@
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/CNCControl/movement.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/CNCControl/movement.h"/>
 </editors>
-<item historyLabel="movement.c" index="0">
-<position info="not_deleted" x="1005" y="0"/>
-</item>
 <item historyLabel="movement.c" index="0">
 <position info="not_deleted" x="1183" y="0"/>
 </item>
@@ -421,8 +418,11 @@
 <item historyLabel="movement.c" index="0">
 <position info="not_deleted" x="22087" y="0"/>
 </item>
-<item active="true" historyLabel="movement.c" index="0">
+<item historyLabel="movement.c" index="0">
 <position info="not_deleted" x="26725" y="30"/>
+</item>
+<item active="true" historyLabel="movement.c" index="0">
+<position info="not_deleted" x="10579" y="115"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -431,6 +431,37 @@
 <actionBarAdvisor/>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="SSD1309.c" tooltip="DispTest/SSD1309.c">
+<persistable path="/DispTest/SSD1309.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="SSD1309.h" tooltip="DispTest/SSD1309.h">
+<persistable path="/DispTest/SSD1309.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="art.c" tooltip="DispTest/art.c">
+<persistable path="/DispTest/art.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="fonts.c" tooltip="DispTest/fonts.c">
+<persistable path="/DispTest/fonts.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="OLED_demo.c" tooltip="DispTest/OLED_demo.c">
+<persistable path="/DispTest/OLED_demo.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" tooltip="DispTest/main.c">
+<persistable path="/DispTest/main.c"/>
+</file>
+<file factoryID="org.coocox.component.ui.editors.repository.RepositoryElementFactory" id="org.coocox.builder.ui.editors.repository.RepositoryBrowser" name="Repository" tooltip="Repository">
+<persistable>&#x0A;<subPage/>
+</persistable>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="startup_stm32f4xx.c" tooltip="test1/cmsis_boot/startup/startup_stm32f4xx.c">
+<persistable path="/test1/cmsis_boot/startup/startup_stm32f4xx.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_gpio.c" tooltip="test1/cmsis_lib/source/stm32f4xx_gpio.c">
+<persistable path="/test1/cmsis_lib/source/stm32f4xx_gpio.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" tooltip="test1/main.c">
+<persistable path="/test1/main.c"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="nrf_driver.h" tooltip="VESC/nrf/nrf_driver.h">
 <persistable path="/VESC/nrf/nrf_driver.h"/>
 </file>
@@ -442,37 +473,6 @@
 </file>
 <file factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="hw_hal.h" tooltip="D:\__+PRJ\LB_DEV\LBTx\hw_hal.h">
 <persistable path="D:\__+PRJ\LB_DEV\LBTx\hw_hal.h" project="LBTx"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="startup_stm32l1xx_md.c" tooltip="SpeakerBox/cmsis_boot/Startup/startup_stm32l1xx_md.c">
-<persistable path="/SpeakerBox/cmsis_boot/Startup/startup_stm32l1xx_md.c"/>
-</file>
-<file factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="tsl_user.h" tooltip="C:\CooCox\SpeakerBOX\tsl_user.h">
-<persistable path="C:\CooCox\SpeakerBOX\tsl_user.h" project="SpeakerBox"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="string.c" tooltip="SpeakerBox/string.c">
-<persistable path="/SpeakerBox/string.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f10x_iwdg.h" tooltip="LBTx/stm_lib/inc/stm32f10x_iwdg.h">
-<persistable path="/LBTx/stm_lib/inc/stm32f10x_iwdg.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f10x_iwdg.c" tooltip="LBTx/stm_lib/src/stm32f10x_iwdg.c">
-<persistable path="/LBTx/stm_lib/src/stm32f10x_iwdg.c"/>
-</file>
-<file factoryID="org.coocox.component.ui.editors.repository.RepositoryElementFactory" id="org.coocox.builder.ui.editors.repository.RepositoryBrowser" name="Repository" tooltip="Repository">
-<persistable>&#x0A;<subPage/>
-</persistable>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="semihosting.c" tooltip="SpeakerBox/semihosting/semihosting.c">
-<persistable path="/SpeakerBox/semihosting/semihosting.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="tsl_acq_stm32l1xx_sw.c" tooltip="SpeakerBox/STMTouch_Driver/src/tsl_acq_stm32l1xx_sw.c">
-<persistable path="/SpeakerBox/STMTouch_Driver/src/tsl_acq_stm32l1xx_sw.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="display.c" tooltip="SpeakerBox/display.c">
-<persistable path="/SpeakerBox/display.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="spi_lld.h" tooltip="FOC/libs/ChibiOS_3.0.2/os/hal/ports/STM32/LLD/SPIv2/spi_lld.h">
-<persistable path="/FOC/libs/ChibiOS_3.0.2/os/hal/ports/STM32/LLD/SPIv2/spi_lld.h"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="conf_general.c" tooltip="FOC/code/config/conf_general.c">
 <persistable path="/FOC/code/config/conf_general.c"/>
